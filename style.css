@@ -1,3 +1,15 @@
+/* Key Colors:
+#FCBB6D // Yellow
+#D8737F // Dark Orange
+#AB6C82 // Opaque Orange
+#685D79 // Blackish Red
+#475C7A // Opauqe Black
+#551A8B // Pic Purple
+Reference: https://i.pinimg.com/originals/3d/88/66/3d8866cc990702b8d150e826f742c8b7.png
+*/
+
+/* Cool UI Reference: https://dribbble.com/shots/8586570-Website-design-for-private-jet-operator */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +17,10 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
+}
+
+button {
   font-family: "Poppins", sans-serif;
 }
 
@@ -41,7 +57,7 @@ nav {
 }
 
 .nav-link{
-    color: #5f5f79;
+    /* color: #5f5f79; */
     font-size: 18px;
     text-decoration: none;
 }
@@ -52,19 +68,56 @@ nav {
 
 .presentation{
     display: flex;
-    width: 90%;
-    margin: auto;
-    min-height: 80vh;
+    min-height: 60rem;
     align-items: center;
+    background-image: url('./img/sunset.jpg');
+    background-size: cover;
 }
 
 .introduction{
     flex:1;
+    margin: 0  0 0 5rem ;
 }
 
 .intro-text h1{
     font-size: 44px;
     font-weight: 500;
+    background: linear-gradient(to right, #ffffff, #eeeeee );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+
+}
+
+.cta {
+  padding: 50px 0 0 0;
+}
+
+.cta-select{
+  border: 2px solid #AB6C82 ;
+  background: transparent;
+  color:white ;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cta-add{
+  border: none;
+  color: white;
+  background: #AB6C82 ;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 30px 0 0 30px;
 }
 
 .cover{
@@ -72,7 +125,6 @@ nav {
 }
 
 .cover img{
-    height: 60vh;
+    width: 60vw;
+    filter: drop-shadow(0 3px 5px #6f6f89);
 }
-
-/* https://youtu.be/ZeDP-rzOnAA?t=1243 */
