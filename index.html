@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Responsive HTML5</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="./img/logo.svg" alt="logo" />
-            <h4 class="logo">Three Dots</h4>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li ><a class="nav-link " href="">Specs</a></li>
-                <li ><a class="nav-link" href="">Prods</a></li>
-                <li ><a class="nav-link" href="">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <img src="./img/cart.svg" alt="cart">
-        </div>
+      <div class="logo-container">
+        <img src="./img/logo.svg" alt="logo" />
+        <h4 class="logo">Three Dots</h4>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="">Specs</a></li>
+          <li><a class="nav-link" href="">Prods</a></li>
+          <li><a class="nav-link" href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <img src="./img/cart.svg" alt="cart" />
+      </div>
     </header>
     <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text">
-                    <h1>Super F.B.O.</h1>
-                    <p>Super mega Plane lorem ipsum lorem ipsum lorem ipsum</p>
-                </div>
-                <div class="cta">
-                    <button class="cta-select">14 Inch</button>
-                    <button class="cta-add">Add to cart</button>
-                </div>
-            </div>
-            <!-- <div class="cover">
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>Super F.B.O.</h1>
+            <p>Super mega Plane lorem ipsum lorem ipsum lorem ipsum</p>
+          </div>
+          <div class="cta">
+            <button class="cta-select">14 Inch</button>
+            <button class="cta-add">Add to cart</button>
+          </div>
+        </div>
+        <!-- <div class="cover">
                 <img src="./img/jet.png" alt="jet">
             </div> -->
-        </section>
+      </section>
+      <section>
+        <div id="like-button-container" ></div>
+      </section>
     </main>
-    
-</body>
+
+    <!-- Note: On production change react.development.js to production.min.js -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="like-button.js"></script>
+  </body>
 </html>
