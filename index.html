@@ -8,11 +8,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <script src="myscripts.js"></script>
     <title>Responsive HTML5</title>
   </head>
 
   <body>
-    <header>
+    <header>                          <!-- NavBar -->
       <div class="logo-container">
         <img src="./img/logo.svg" alt="logo" />
         <h4 class="logo">Three Dots</h4>
@@ -29,7 +30,7 @@
       </div>
     </header>
     <main>
-      <section class="presentation">
+      <section class="presentation"> <!-- First Section -->
         <div class="introduction">
           <div class="intro-text">
             <h1>Super F.B.O.</h1>
@@ -40,9 +41,14 @@
             <button class="cta-add">Add to cart</button>
           </div>
         </div>
-        <!-- <div class="cover">
-                <img src="./img/jet.png" alt="jet">
-            </div> -->
+      </section>
+      <section class="flipcard-section">           <!-- FlipCard Section -->
+          <div class="flip-card-3D-wrapper">
+            <div id="flip-card">
+              <div class="flip-card-front"><p>Front</p><button id="flip-card-btn-turn-to-back">flip</button></div>
+              <div class="flip-card-back"><p>Back</p><button id="flip-card-btn-turn-to-front">flip</button></div>
+            </div>
+        </div>
       </section>
       <section>
         <div id="like-button-container" ></div>
@@ -61,3 +67,7 @@
     <script src="like-button.js"></script>
   </body>
 </html>
+
+
+
+<!-- https://codepen.io/Bjornros/pen/VPzQzB -->
